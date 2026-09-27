@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-volt: #22d3ee;
+  --color-juice: #e879f9;
+  --color-ember: #fbbf24;
+  --color-abyss: #070812;
+  --color-panel: #0d1022;
+  --font-sans: "PingFang SC", "HarmonyOS Sans SC", "Microsoft YaHei", sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { color-scheme: dark; background: #070812; }
+body { margin: 0; min-width: 320px; min-height: 100vh; overflow-x: hidden; color: #f8fafc; font-family: var(--font-sans); background: radial-gradient(circle at 50% -20%, #312e81 0, #070812 58%); }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { font: inherit; }
+#app { min-height: 100vh; }
+.glass { background: color-mix(in srgb, #0d1022 82%, transparent); border: 1px solid rgba(103, 232, 249, .2); box-shadow: 0 24px 70px rgba(0, 0, 0, .35); backdrop-filter: blur(18px); }
+.neon-text { text-shadow: 0 0 12px rgba(34, 211, 238, .75), 0 0 30px rgba(232, 121, 249, .35); }
+.scanlines::after { content: ""; position: fixed; inset: 0; pointer-events: none; opacity: .08; background: repeating-linear-gradient(0deg, transparent 0 3px, #fff 4px); mix-blend-mode: overlay; }
+.token-pill { display: inline-flex; align-items: center; gap: .45rem; padding: .45rem .8rem; border-radius: 999px; border: 1px solid rgba(34, 211, 238, .28); background: rgba(7, 8, 18, .72); }
+   
